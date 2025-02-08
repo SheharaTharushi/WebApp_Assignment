@@ -15,8 +15,8 @@ const Header = () => {
               className={`text-gray-600 hover:text-blue-600 relative ${activePage === "home" ? "text-[#1090CB]" : ""}`}
             >
               {activePage === "home" && (
-                <span className="absolute top-0 left-0 transform -translate-y-1/2 -translate-x-1/2 w-2 h-2 bg-[#1090CB] rounded-full"></span>
-              )}
+                <span className="absolute top-0 left-0 transform -translate-y-1/2 -translate-x-1/2 w-2 h-2 bg-[#1090CB] rounded-full"></span> //blue dot
+              )} 
               <span className={activePage === "home" ? "text-[#1090CB]" : ""}>Home</span>
             </a>
             <a
@@ -41,7 +41,7 @@ const Header = () => {
               Blog
             </a>
           </nav>
-          <a href="#" className="bg-[#1090CB] text-white px-4 py-2 rounded ml-6">
+          <a className="bg-[#1090CB] text-white px-4 py-2 rounded ml-6">
             Contact Us
           </a>
         </div>
